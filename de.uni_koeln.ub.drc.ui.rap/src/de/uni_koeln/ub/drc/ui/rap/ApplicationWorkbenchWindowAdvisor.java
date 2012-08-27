@@ -5,7 +5,7 @@
  * <p/>
  * Contributors: Mihail Atanassov - initial API and implementation
  *************************************************************************************************/
-package de.uni_koeln.ub.drc.ui;
+package de.uni_koeln.ub.drc.ui.rap;
 
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.Point;
@@ -18,6 +18,7 @@ import org.eclipse.ui.application.IActionBarConfigurer;
 import org.eclipse.ui.application.IWorkbenchWindowConfigurer;
 import org.eclipse.ui.application.WorkbenchWindowAdvisor;
 
+import de.uni_koeln.ub.drc.ui.ApplicationActionBarAdvisor;
 import de.uni_koeln.ub.drc.ui.facades.SessionContextSingleton;
 
 /**
@@ -51,8 +52,7 @@ public class ApplicationWorkbenchWindowAdvisor extends WorkbenchWindowAdvisor {
 		configurer.setTitle("DRC"); //$NON-NLS-1$
 		Rectangle rect = Display.getCurrent().getBounds();
 		configurer.setInitialSize(new Point(rect.width, rect.height));
-		configurer.setShellStyle(SWT.TITLE | SWT.RESIZE | SWT.CLOSE | SWT.MAX
-				| SWT.MIN);
+		configurer.setShellStyle(SWT.TITLE | SWT.RESIZE | SWT.CLOSE | SWT.MAX);
 		configurer.getWindow().getWorkbench()
 				.addWindowListener(new IWindowListener() {
 

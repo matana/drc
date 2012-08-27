@@ -12,8 +12,6 @@ import org.eclipse.ui.application.IWorkbenchWindowConfigurer;
 import org.eclipse.ui.application.WorkbenchAdvisor;
 import org.eclipse.ui.application.WorkbenchWindowAdvisor;
 
-import de.uni_koeln.ub.drc.ui.ApplicationWorkbenchWindowAdvisor;
-
 /**
  * This workbench advisor creates the window advisor, and specifies the
  * perspective id for the initial window.
